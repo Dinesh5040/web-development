@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    /* #span1 {
+        width: 200px; // This does not work because inline elements cannot have height.
+        height: 100px;
+    } */
+    #div {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border: 2px solid black;
+        margin: 30px;
+        box-sizing: border-box;
+    }
+
+    #div1 {
+        width: 400px;
+        padding: 20px;
+        border: 10px solid black;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <h1>Box Model</h1>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo impedit pariatur velit consequatur aliquam
+        repudiandae maxime nostrum nihil? Incidunt provident, ea animi vitae alias modi aliquid dicta natus non! Esse!
+    </div>
+    <span id="span1">span1</span>
+    <span id="span2">span2</span>
+    <div id="div">div</div>
+    <div id="div1">div1</div>
+    <!-- The box model controls how elements take up space.
+    Understand how content, padding, border, and margin interact.
+    Use box-sizing: border-box to make layout calculations easier. -->
+</body>
+
+</html>
