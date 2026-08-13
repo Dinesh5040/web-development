@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing</title>
+    <style>
+        #para {
+            background-color: chocolate;
+            width: 50%;
+        }
+
+        #div1 {
+            width: 80%;
+            background-color: brown;
+            font-size: 1.5em;
+            /* 2 times the parent's font size */
+        }
+
+        #div2 {
+            /* width: 100vw; */
+            /* Full width of the viewport */
+            height: 50vh;
+            /* Full width of the viewport */
+            width: calc(100% - 200px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box-sizing</h1>
+    <div>
+        <div id="div1">
+            <p id="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore adipisci aperiam corrupti quis pariatur
+                nobis earum libero consectetur, deleniti repudiandae asperiores laboriosam necessitatibus debitis!
+                Voluptatum libero reprehenderit, tempora voluptates deserunt rem? Quod mollitia enim sint voluptates
+                maxime laudantium sequi culpa laborum inventore excepturi. Praesentium quis natus qui repellendus minima
+                repudiandae laboriosam maxime alias omnis! Sunt reiciendis doloribus aliquid quidem.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores error dolore nostrum dignissimos magni
+                perspiciatis excepturi consequatur aperiam odit quam nulla reiciendis, omnis vero beatae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, rem dolores? Blanditiis magni
+                consectetur nisi, nobis suscipit sapiente maxime pariatur excepturi fugit ad aut quo, minima repellendus
+                cumque totam delectus, eius at ipsa dolores. Rerum laudantium ipsam ex nemo, est esse praesentium
+                pariatur minima nostrum quos provident voluptatum dolore alias!
+            </p>
+        </div>
+    </div>
+    <div id="div2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint inventore corporis ipsam perspiciatis quibusdam
+        dignissimos, aliquid praesentium illum, numquam mollitia dicta minima recusandae? Natus debitis adipisci
+        blanditiis modi suscipit fuga alias. Aperiam nesciunt ex, perferendis minima reiciendis odio nihil quis eaque,
+        similique illo corrupti eveniet enim hic omnis! Adipisci temporibus quas ut magnam quia saepe blanditiis quo!
+        Recusandae optio nam nihil excepturi, ex, necessitatibus voluptate rem sequi aut, temporibus vitae harum
+        delectus quas numquam enim? Ducimus non cumque suscipit mollitia eveniet ipsum quos, praesentium est aut iste
+        similique error, amet optio laborum nisi rem nam cupiditate voluptatem molestiae commodi tempore?
+    </div>
+
+</body>
+
+</html>
