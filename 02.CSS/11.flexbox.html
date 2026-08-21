@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .Container {
+            border: 2px solid rgb(56, 25, 25);
+            border-radius: 5cqh;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: space-evenly; */
+            /* justify-content: left; */
+            justify-content: flex-start;
+            height: 100vw;
+            /* align-items: stretch; */
+            align-items: flex-start;
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+            gap: 20px;
+        }
+
+        .Box {
+            border: 2px solid rgb(118, 136, 53);
+            width: 35px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5cqh;
+            height: 20px;
+            /* flex-grow: 1; 
+            flex-shrink: 1;
+            flex-basis: 45px; */
+            flex: 1 1 40px;
+
+        }
+
+        #Box1 {
+            align-self: flex-start;
+            flex-grow: 2;
+            /* flex-shrink: 2; */
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div class="Container">
+        <div class="Box" id="Box1">Box1</div>
+        <div class="Box">Box2</div>
+        <div class="Box">Box3</div>
+        <div class="Box">Box4</div>
+        <div class="Box">Box5</div>
+        <div class="Box">Box6</div>
+
+    </div>
+    <div class="png">
+        <img height="500px" src="flexbox.png" alt="Justify Content"> <br> Controls how items are aligned along the main
+        axis
+    </div>
+
+
+
+</body>
+
+</html>
