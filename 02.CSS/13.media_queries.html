@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .container {
+        height: 50vh;
+        width: 150vw;
+        background-color: brown;
+    }
+
+    .box {
+        height: 20px;
+        width: 30px;
+        border: 2px;
+        margin: 2px;
+        background-color: aqua;
+    }
+
+    @media (max-width: 785px) and (min-width: 500px) {
+        .container {
+            background-color: blue;
+        }
+    }
+
+    @media print {                   /*for print*/
+        body {
+            background: white;
+            color: black;
+        }
+
+        .no-print {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+    </div>
+
+</body>
+
+</html>
