@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition & Animaton</title>
+    <style>
+        .container {
+            background-color: brown;
+
+        }
+
+        .Box {
+            background-color: aqua;
+            width: 40px;
+           
+            margin: 2px;
+            color: rgb(28, 7, 7);
+           /* transition:  width 2.3s ease-in; */
+           animation: width 5s ease-out 1.5s alternate;
+        }
+           @keyframes width {
+            from{
+                width: 40px;
+            }
+            to{
+                width: 40vw;
+            }
+           }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Box" >Box1</div>
+        <div class="Box">Box2</div>
+        <div class="Box">Box3</div>
+        <div class="Box">Box4</div>
+        <div class="Box">Box5</div>
+    </div>
+
+</body>
+
+</html>
