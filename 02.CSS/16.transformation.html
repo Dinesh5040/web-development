@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 40vh;
+            width: 70vw;
+        }
+        .box{
+            background-color: coral;
+            height: 75px;
+            width: 75px;
+            /* transform: translate(50px, 30px); */
+            /* transform: rotate(45deg);  */
+            /* transform-origin: top left */
+            /* transform: scale(1.5);     */
+            /* transform: translate(100px, 50px) rotate(30deg) scale(1.2); */
+            transform: rotateY(45deg);
+transform-style: preserve-3d;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
